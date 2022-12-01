@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
-  background-color: black;
+  background-color: white;
 }
 
 *, *::before, *::after {
@@ -19,3 +19,28 @@ html {
   center;
   background-size: cover;
 } */
+
+nav {
+  display: none;
+}
+input.nav-toggle {
+  display: none;
+}
+input.nav-toggle:checked ~ nav {
+  display: block;
+}
+label.nav-toggle-label {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  input.nav-toggle {
+    display: none;
+  }
+  label.nav-toggle-label {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+}
