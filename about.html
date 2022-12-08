@@ -8,12 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
 <body>
-  <header class="hero-banner">
+  <header class="about-nav">
+  <div class="logo-home">
     <img src="images/chef-logo-white.svg">
     <h1><a href="index.html"><span>BREADY MADE</span></a></h1>
+  </div>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+  <label for="nav-toggle" class="nav-toggle-label"><span class="material-icons-outlined">menu</span>
+  </label>
+
     <nav role="navigation">
       <ul>
         <li><a href="about.html">About Us</a></li>
@@ -22,27 +29,35 @@
     </nav>
   </header>
 
+<div class="content">
 <section>
     <p>Check out our breads on facebook pinterest and instagram!</p>
       <div class="contacts">
-      <img src="images/facebook.svg">
-      <img src="images/pinterest.svg">
-      <img src="images/instagram.svg">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-pinterest"></a>
     </div>
   </section>
 
 <section>
-  <img src="images/about-usjpg" alt="man with bread">
+  <img src="images/about-us.jpg" alt="man with bread">
 </section>
 
-<section>
-  <p>Bready Made was founded in 2001, we pride ourselves in producing quality authentic artisinal breads.</p>
+<section class="big-para">
+  <p>Bready Made was founded in 2001, we pride ourselves in producing quality authentic artisinal breads. Our breads are freshly fresh, unlike any you have tasted elsewhere. We make real bread, hand-made from scratch – no artificial ingredients. To evoke full flavour potential, our breads are always prepared with pure ingredients, sold and eaten fresh. Trained in classical baking techniques, our team creates breads that amuse the eyes and the taste buds through flawless execution. Our team is proud to present our new delivery service through the Bready Made site. After setting shop in Bank Street since 2001, with high demmand from all of you for new locations, we've partnered with Bake's Delivery to impressively be available to deliver throughout Ottawa at affordable delivery rates and exceptional food delivery qualtiy. The breads are guaranteed fresh and warm just as it would be straight from the oven at our in store location, our delivery does not compromise on the superb quality and experience of our breads.</p>
 </section>
 
-  <footer role="contentinfo">
-    <img src="images/chef-logo-white.svg">
-      <small>© 2022 Bready Made</small>
-      <div class="social buttons">
-      </div>
-  </footer>
+</div>
+
+<footer role="contentinfo">
+  <div class="logos">
+  <img src="images/chef-logo-white.svg">
+    <div class="social-buttons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+    </div>
+  </div>
+  <small>© 2022 Bready Made</small>
+</footer>
 </body>
