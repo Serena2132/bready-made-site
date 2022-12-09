@@ -17,7 +17,7 @@ img {
   width: 100%;
 }
 
-nav ul{
+/* nav ul{
   display: flex;
   flex-direction: row;
   margin-top: 1.75rem;
@@ -43,7 +43,7 @@ nav ul a:hover{
   background-color:#DDD2BC;
   color: black;
   text-decoration: 3px #B67B38 underline;
-}
+} */
 
 header {
   display: flex;
@@ -88,12 +88,18 @@ nav {
 input.nav-toggle {
   display: none;
 }
+
 input.nav-toggle:checked ~ nav {
   display: block;
 }
+
 label.nav-toggle-label {
   display: block;
+  color: #fff;
+  margin: 2rem;
+  z-index: 999;
 }
+
 
 .banner-img {
   width: 100%;
@@ -326,4 +332,65 @@ align-items: center;
   nav {
     display: block;
   }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.75rem;
+    padding-right: 2rem;
+  }
+
+  nav ul li{
+    list-style-type: none;
+    padding-left: 4rem;
+  }
+
+  nav ul a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem
+  }
+
+  nav ul a:hover{
+    background-color:#DDD2BC;
+    color: black;
+    text-decoration: 3px #B67B38 underline;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .week{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  nav ul{
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    margin: 1rem;
+    padding: 0;
+  }
+
+nav ul li{
+      margin: 2rem;
+}
+
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 1rem;
+    font-weight: 700;
+
+  }
+
+  nav ul li a:hover{
+    color: black;
+    background-color: #DDD2BC;
+    border-radius: 10px;
+    text-decoration: 3px #B67B38 underline;
 }
