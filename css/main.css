@@ -144,9 +144,9 @@ label.nav-toggle-label {
 
 article {
   text-align: center;
-  margin-bottom: 4em;
   background-color: #DDD2BC;
   border-radius: 20px;
+  padding: 2em;
 }
 
 .photo {
